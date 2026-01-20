@@ -7,11 +7,12 @@
     --picwidth: 500px;
     --accentBGLight: white;
     --accentBGDark: black;
-    --backBG: rgb(234, 252, 255);
+    --backBGLight: rgb(234, 252, 255);
+    --backBGDark: rgb(58, 58, 58);
 }
 body{
     min-height: 100dvh;
-    background: var(--backBG);
+    background: var(--backBGLight);
 }
 footer{
     display: grid;
@@ -45,7 +46,7 @@ footer{
 .toppen header{
     font-size: 52px;
 }
-.toppen p{
+.toppenLight p{
     display: grid;
     place-content: center;
     background: rgb(231, 231, 231);
@@ -56,7 +57,18 @@ footer{
     outline: 1px solid rgb(202, 202, 202);
     box-shadow: 3px 3px 8px rgb(180, 180, 180);
 }
-.information{
+.toppenDark p{
+    display: grid;
+    place-content: center;
+    background: rgb(34, 34, 34);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.4rem;
+    user-select: none;
+    outline: 1px solid rgb(131, 131, 131);
+    box-shadow: 3px 3px 8px rgb(180, 180, 180);
+}
+.informationLight{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -64,7 +76,17 @@ footer{
     margin-left: auto;
     margin: 3rem;
     gap: 3rem;
-    background: var(--backBG);
+    background: var(--backBGLight);
+}
+.informationDark{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 3rem;
+    gap: 3rem;
+    background: var(--backBGDark);
 }
 .infoRuta{
     padding: 2rem;
