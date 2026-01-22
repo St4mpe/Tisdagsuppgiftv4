@@ -22,9 +22,16 @@ body{
 footer{
     display: grid;
     place-items: center;
-    background: var(--accentBGLight);
     height: 80px;
     box-shadow: 0px -2px 10px rgb(180, 180, 180);
+}
+.footerLight{
+    background: var(--accentBGLight);
+    color: black;
+}
+.footerDark{
+    background: var(--accentBGDark);
+    color: white;
 }
 .toppenLight{
     display: flex;
@@ -93,13 +100,27 @@ footer{
     gap: 3rem;
     background: var(--backBGDark);
 }
-.infoRuta{
+.infoRutaLight{
     padding: 2rem;
     border-radius: 0.5rem;
     max-width: 50%;
     display: grid;
     place-items: center;
     background: var(--accentBGLight);
+    color: black;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    box-shadow: 5px 5px 10px rgb(180, 180, 180);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.infoRutaDark{
+    padding: 2rem;
+    border-radius: 0.5rem;
+    max-width: 50%;
+    display: grid;
+    place-items: center;
+    background: var(--accentBGDark);
+    color: white;
     margin-top: 2rem;
     margin-bottom: 4rem;
     box-shadow: 5px 5px 10px rgb(180, 180, 180);
