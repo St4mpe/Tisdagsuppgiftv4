@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const knapp = document.getElementById('knapp');
     const topp = document.querySelector('.toppen');
     const backgrund = document.querySelector('.information');
-    const inforuta = document.querySelector('inforuta');
+    const inforuta = document.getElementsByClassName('inforuta');
     const body = document.getElementById('body');
     const footer = document.getElementById('footer');
 
@@ -15,7 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
             knapp.classList.replace("light", "dark");
             knapp.innerHTML = "Switch to Light-mode";
             footer.classList.replace("footerLight", "footerDark");
-            inforuta.classList.replace("infoRutaLight", "infoRutaDark");
+            for(vdo=0;vdo<inforuta.length;vdo++){
+                inforuta[vdo].classList.replace("infoRutaLight", "infoRutaDark");
+            }
         } 
         else {
             body.classList.replace("bodyDark", "bodyLight");
@@ -24,7 +26,10 @@ document.addEventListener("DOMContentLoaded", function () {
             knapp.classList.replace("dark", "light");
             knapp.innerHTML = "Switch to Dark-mode";
             footer.classList.replace("footerDark", "footerLight");
-            inforuta.classList.replace("infoRutaDark", "infoRutaLight");
+
+            for(vdo=0;vdo<inforuta.length;vdo++){
+                inforuta[vdo].classList.replace("infoRutaDark", "infoRutaLight");
+            }
         }
     });
 });
