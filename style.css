@@ -12,7 +12,12 @@
 }
 body{
     min-height: 100dvh;
+}
+.bodyLight{
     background: var(--backBGLight);
+}
+.bodyDark{
+    background: var(--backBGDark);
 }
 footer{
     display: grid;
