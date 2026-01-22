@@ -23,14 +23,15 @@ footer{
     display: grid;
     place-items: center;
     height: 80px;
-    box-shadow: 0px -2px 10px rgb(180, 180, 180);
 }
 .footerLight{
     background: var(--accentBGLight);
+    box-shadow: 0px 2px 10px rgb(180, 180, 180);
     color: black;
 }
 .footerDark{
     background: var(--accentBGDark);
+    box-shadow: 0px -2px 10px rgb(77, 77, 77);
     color: white;
 }
 .toppenLight{
@@ -50,7 +51,7 @@ footer{
     justify-content: space-between;
     padding: 1rem;
     text-align: center;
-    box-shadow: 0px 2px 10px rgb(180, 180, 180);
+    box-shadow: 5px 5px 10px rgb(77, 77, 77);
     width: 100%;
     background: var(--accentBGDark);
     color: white;
@@ -78,7 +79,7 @@ footer{
     border-radius: 0.4rem;
     user-select: none;
     outline: 1px solid rgb(131, 131, 131);
-    box-shadow: 3px 3px 8px rgb(180, 180, 180);
+    box-shadow: 5px 5px 10px rgb(77, 77, 77);
 }
 .informationLight{
     display: flex;
@@ -123,7 +124,7 @@ footer{
     color: white;
     margin-top: 2rem;
     margin-bottom: 4rem;
-    box-shadow: 5px 5px 10px rgb(180, 180, 180);
+    box-shadow: 5px 5px 10px rgb(77, 77, 77);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .infoRuta:hover {
